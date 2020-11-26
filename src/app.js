@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended:true }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.redirect('pages/home', {
+    res.render('pages/home', {
         saida: 'Desenvolvedores do Projeto ',
         user1: 'Emanuelle Neves', 
         user2: 'Alberto Rebouças', 
