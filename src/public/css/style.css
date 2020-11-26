@@ -24,7 +24,6 @@ nav {
   height:65px;
   line-height:56px;
 }
-
 nav.nav-extended .nav-wrapper {
   min-height:94px;
   height:auto;
@@ -85,6 +84,7 @@ h1,h2{
 
 .equipe {
   opacity: 0;
+  text-align: center;
 }
 .fade-in {
   animation: fadein 600ms;
