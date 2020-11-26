@@ -1,0 +1,20 @@
+<%- contentFor('body') %>
+<div id="funcoesMat">
+    <form method="POST" action="/fibonacci" autocomplete="off">
+        <p>Insira uma base para a sequência</p>
+        <input 
+            name="base" 
+            type="text" 
+            required
+            autofocus
+            placeholder="Insira um número inteiro"
+        />
+    <button type="submit" id="btnSubmit" class="btn btn-outline-dark">Submit</button>
+</form>
+<div>
+    <% if(resultado) { %>
+        <p>Base: <%= entrada %></p>
+        <p>Fibonacci: <%= resultado %></p>
+    <% } %>
+</div>
+</div>

@@ -1,0 +1,21 @@
+<%- contentFor('body') %>
+<div id="funcoesMat">
+    <form method="POST" action="/ordenar" autocomplete="off">
+        <p>Insira um conjunto de números inteiros separados por vírgula!</p>
+        <input 
+            id="input_text"
+            name="array" 
+            type="text" 
+            required
+            autofocus
+            placeholder="Ex: 1,2,3,4,5"
+        />
+        <button class="btn btn-outline-dark" type="submit" id="btnSubmit">Submit</button>
+    </form>
+    <div>
+        <% if(resultado) { %>
+            <p>Array: [<%= entrada %>]</p>
+            <p>Array ordenado: [<%= resultado %>]</p>
+        <% } %>
+    </div>
+  </div>

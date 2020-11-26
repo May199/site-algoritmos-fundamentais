@@ -1,0 +1,19 @@
+<%- contentFor('body') %>
+<div id="funcoesMat">
+    <form method="POST" action="/contador" autocomplete="off">
+        <p>Insira um número</p>
+        <input 
+            name="num" 
+            type="text" 
+            required
+            autofocus
+            placeholder="Insira um número inteiro"
+        />
+        <button class="btn btn-outline-dark" type="submit" id="btnSubmit">Submit</button>
+    </form>
+    <div>
+        <% if(resultado) { %>
+            <p>Quantidade de números entre 1 e <%= num %> é <%= resultado %></p>
+        <% } %>
+    </div>
+</div>

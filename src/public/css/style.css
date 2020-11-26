@@ -1,0 +1,104 @@
+html{
+  font-family: Robot, sans-serif;
+}
+body {
+  background-color:white;
+  background-attachment:fixed;
+}
+header{
+  position:center;
+  margin-right:auto;
+  left:15px;
+  top:15px;
+}
+main{
+  position: -webkit-sticky;
+}
+span {
+  font-weight: thin;
+  font-size: 1.5rem;
+}
+nav {
+  background-color:white;
+  width:100%;
+  height:65px;
+  line-height:56px;
+}
+
+nav.nav-extended .nav-wrapper {
+  min-height:94px;
+  height:auto;
+}
+.navbar-fixed {
+  position:relative;
+  height:56px;
+  z-index:997;
+}
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display:block;
+  font-size:24px;
+  height:94px;
+  line-height:94px;
+}
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display:block;
+  font-size:24px;
+  height:94px;
+  line-height:94px;
+}
+h1,h2{
+  font-size: 3rem;
+}
+/*menu*/
+.logo_text {font-size:0; margin:0;}
+.logo_img {margin:0%; margin-top:2px;}
+.navbar {background-color:black;}
+.navbar ul a:hover{background-color:transparent; color:gray;}
+
+#capa{
+  background-image: url('../assets/capa.png');
+	width:1054px;
+  height:350px;
+  font-size:1.3rem;
+  padding:70px;
+  margin-top:40px;
+  color:black;
+}
+#funcoesMat{
+  background:white;
+  position:center;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-top:40px;
+  height:100%;
+  overflow:hidden;
+  overflow-y:auto;
+  padding:0 15px;
+}
+
+.equipe {
+  opacity: 0;
+}
+.fade-in {
+  animation: fadein 600ms;
+  animation-fill-mode: forwards;
+}
+.fade-out {
+  animation: fadeout 600ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}

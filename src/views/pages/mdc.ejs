@@ -1,0 +1,26 @@
+<%- contentFor('body') %>
+<div id="funcoesMat">
+    <form method="POST" action="/mdc" autocomplete="off">
+        <p>Máximo divisor comum</p>
+        <input 
+            name="a" 
+            type="text" 
+            required
+            autofocus
+            placeholder="Insira um número inteiro"
+        />
+        <input 
+            name="b" 
+            type="text" 
+            required
+            autofocus
+            placeholder="Insira um número inteiro"
+        />
+        <button type="submit" id="btnSubmit" class="btn btn-outline-dark">Submit</button>
+    </form>
+    <div>
+        <% if(resultado) { %>
+            <p>Máximo divisor comum entre <%= entrada1 %> e <%= entrada2 %> é: <%= resultado %></p>
+        <% } %>
+    </div>
+</div>

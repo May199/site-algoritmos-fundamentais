@@ -1,0 +1,21 @@
+<%- contentFor('body') %>
+<div id="funcoesMat">
+    <form method="POST" action="/soma" autocomplete="off">
+        <p>Insira um conjunto de números inteiros separados por vírgula!</p>
+        <input 
+            id="input_text"
+            name="array" 
+            type="text" 
+            required
+            autofocus
+            placeholder="Ex: 1,2,3,4,5"
+        />
+        <button type="submit" id="btnSubmit" class="btn btn-outline-dark">Submit</button>
+    </form>
+    <div>
+        <% if(resultado) { %>
+            <p>Array: <%= entrada %></p>
+            <p>Soma: <%= resultado %></p>
+        <% } %>
+    </div>
+</div>

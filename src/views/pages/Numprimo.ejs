@@ -1,0 +1,20 @@
+<%- contentFor('body') %>
+<div id="funcoesMat">
+    <form method="POST" action="/Numprimo" autocomplete="off">
+        <p>Insira um número!</p>
+        <input 
+            name="n" 
+            type="text" 
+            required
+            autofocus
+            placeholder="Ex: 1,2,3,4,5"
+        />
+        <button type="submit" id="btnSubmit" class="btn btn-outline-dark">Submit</button>
+    </form>
+    <div>
+        <% if(resultado) { %>
+            <p>Entrada: <%= entrada %></p>
+            <p>Resultado: <%= resultado %></p>
+        <% } %>
+    </div>
+</div>
