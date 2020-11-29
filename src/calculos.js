@@ -1,5 +1,3 @@
-const { reset } = require("nodemon");
-
 module.exports = {
     somaConjunto(array) {
         var soma = 0;

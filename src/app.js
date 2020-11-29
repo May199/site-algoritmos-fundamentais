@@ -1,6 +1,5 @@
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');  
-const path = require('path'); 
 const {
     toArray,
     somaConjunto,
@@ -11,7 +10,7 @@ const {
     ordenar} = require('./calculos.js');
 const app = express();
 
-app.set('views', path.join(__dirname + '/views'));
+app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(expressLayouts); 
 app.use(express.static(__dirname + '/public/'));
