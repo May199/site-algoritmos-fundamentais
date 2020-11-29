@@ -26,3 +26,6 @@ O site deve usar pacotes npm externos;
 O site deve ter imagens e css;
 
 O site deve usar o pacote ejs;
+
+# Aplicação no Heroku
+https://site-algoritmos.herokuapp.com/
