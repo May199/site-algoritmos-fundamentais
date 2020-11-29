@@ -31,7 +31,7 @@ app.get('/soma', (req, res) => {
 app.post('/soma', (req, res) => {
     const {array} = req.body;
     const entrada = toArray(array); 
-    const resultado = somaConjunto(entrada); 
+    const resultado = somaConjunto(entrada).map(numero => ` ${numero}`); 
 
     return res.render('pages/soma', {entrada, resultado,});
 
@@ -68,7 +68,7 @@ app.get('/fibonacci', (req, res) => {
 app.post('/fibonacci', (req, res) => {
     const {base} = req.body;
     const entrada = base; 
-    const resultado = fibonacci(entrada);
+    const resultado = fibonacci(entrada).map(numero => ` ${numero}`);
 
     return res.render('pages/fibonacci', {entrada, resultado,});
 
