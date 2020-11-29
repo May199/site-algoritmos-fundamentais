@@ -96,4 +96,4 @@ app.post('/contador', (req, res) => {
     return res.render('pages/contador', {resultado, num});
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);

@@ -3,13 +3,14 @@ const { reset } = require("nodemon");
 module.exports = {
     somaConjunto(array) {
         var soma = 0;
-        for (i = 0; i < array.length; i++) {
+        for (let i = 0; i < array.length; i++) {
             soma += array[i];
         }
         return soma;
     },
   
     mdc(a, b){
+        var resto, mdc, resultado; 
         while (b != 0) {
             resto = a % b; 
             a = b; 
@@ -21,7 +22,7 @@ module.exports = {
     },
     Numprimo(n) {
         var resultado = '', div = 0; 
-        for (i = 1; i <= n; i++) {
+        for (let i = 1; i <= n; i++) {
             if (n % i == 0)
                 div++;
         }
@@ -38,7 +39,7 @@ module.exports = {
         if (base <=2){
             num = base -1;
         }else{
-            for(i=1; i <= base; i++){
+            for(let i=1; i <= base; i++){
                 resultado[0] = 0; 
                 resultado[i] = num;
                 sucessor = antecessor + num; 
