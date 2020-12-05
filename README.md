@@ -1,4 +1,5 @@
 # site-algoritmos-fundamentais
+# Atividade desenvolvida na Universidade de Fortaleza 
 Implemente um site composto por 7 páginas. A primeira página deve ser a página inicial com 6 links para as outras seis páginas. Cada página deve implementar cada um dos algoritmos abaixo. Os valores de entrada devem ser capturados a partir de campos de entrada (tag input) definidos no HTML e recebidos como parâmetros da requisição HTTP. O resultado de cada cálculo deve ser apresentado para o usuário na mesma página do formulário. 
 
 
