@@ -8,7 +8,7 @@ header{
 }
 main{position: -webkit-sticky;}
 span{font-weight: thin;font-size: 1.5rem;}
-h1,h2{font-size: 3rem;}
+h1,h2{font-size: 2rem;}
 
 nav {
   background-color:	white;
@@ -48,6 +48,19 @@ nav i.material-icons {
 .navbar {background-color:black;}
 .navbar ul a:hover{background-color:transparent; color:gray;}
 
+#contato{
+  font-family:sans-serif; 
+  font-size: 15px;
+  background-color:white;
+  max-width: 500px;
+}
+textarea {
+  width: 500px;
+  padding: 10px;
+  color: black;
+  margin-top: 5px;
+  border: 1px solid;
+}
 #capa{
   background-image: url('../assets/capa.png');
 	width:1054px;

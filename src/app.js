@@ -31,7 +31,7 @@ app.get('/soma', (req, res) => {
 app.post('/soma', (req, res) => {
     const {array} = req.body;
     const entrada = toArray(array); 
-    const resultado = somaConjunto(entrada).map(numero => ` ${numero}`); 
+    const resultado = somaConjunto(entrada); 
 
     return res.render('pages/soma', {entrada, resultado,});
 
@@ -93,6 +93,13 @@ app.post('/contador', (req, res) => {
     const resultado = contador(num);
 
     return res.render('pages/contador', {resultado, num});
+});
+
+app.get('/contato', (req, res) => {
+    res.render('pages/contato', { resultado: null });
+});
+app.post('/contato', (req, res) => {
+    return res.render('pages/contato',);
 });
 
 app.listen(process.env.PORT || 3000);
