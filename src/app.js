@@ -1,4 +1,5 @@
 const express = require('express');
+const firebase = require('firebase');
 const expressLayouts = require('express-ejs-layouts');  
 const {
     toArray,
@@ -9,6 +10,16 @@ const {
     contador,
     ordenar} = require('./calculos.js');
 const app = express();
+
+firebase.initializeApp({
+    apiKey: "AIzaSyBRutmccJl6f6vhL35RAivYuMZFbTgxg0s",
+    authDomain: "site-algoritmos-fundamentais.firebaseapp.com",
+    projectId: "site-algoritmos-fundamentais",
+    storageBucket: "site-algoritmos-fundamentais.appspot.com",
+    messagingSenderId: "751097128519",
+    appId: "1:751097128519:web:845a76b5689c48b5d13362",
+    measurementId: "G-7E0JFFBL9L"
+});
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
@@ -99,7 +110,20 @@ app.get('/contato', (req, res) => {
     res.render('pages/contato', { resultado: null });
 });
 app.post('/contato', (req, res) => {
-    return res.render('pages/contato',);
+    const {nome, telefone, email, mensagem} = req.body;
+
+    const dados = {
+        nome, 
+        telefone, 
+        email, 
+        mensagem,
+    }
+    const db = firebase.database().ref('contatos');
+
+    const novoContato = db.push();
+    novoContato.set(dados);
+
+    return res.render('pages/contato', {header: true});
 });
 
 app.listen(process.env.PORT || 3000);
