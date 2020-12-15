@@ -28,7 +28,18 @@ O site deve usar o pacote ejs;
 ### Utilizando o JEST para testes
 > **Obs.:** Cada código referente aos algoritmos acima do módulo `calculos.js` possui 1 ou 2 testes. 
 Para executar os testes basta utilizar o comando `npm test`utilizando claro as dependencias de desenvolvimento disponíveis no `package.json`. 
+#### Utilizando o propt de comando ou o terminal VS faça: 
 
+    $ npm install jest
+    $ npx jest --init
+#### Para a configuração do Jest após executar o segundo comando, use: 
+
+    $ √ Would you like to use Jest when running "test" script in "package.json"? ... yes
+    $ √ Would you like to use Typescript for the configuration file? ... no
+    $ √ Choose the test environment that will be used for testing » node
+    $ √ Do you want Jest to add coverage reports? ... no
+    $ √ Which provider should be used to instrument code for coverage? » babel
+    $ √ Automatically clear mock calls and instances between every test? ... yes
 ### Equipe
 >Emanuelle Neves 
 >Alberto Rebouças
