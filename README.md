@@ -41,7 +41,7 @@ Para executar os testes basta utilizar o comando `npm test`utilizando claro as d
     $ √ Which provider should be used to instrument code for coverage? » babel
     $ √ Automatically clear mock calls and instances between every test? ... yes
 ### Equipe
->Emanuelle Neves 
->Alberto Rebouças
+>#### Emanuelle Neves 
+>#### Alberto Rebouças
 ### Aplicação no Heroku
 https://site-algoritmos.herokuapp.com/
