@@ -28,5 +28,9 @@ O site deve usar o pacote ejs;
 ### Utilizando o JEST para testes
 > **Obs.:** Cada código referente aos algoritmos acima do módulo `calculos.js` possui 1 ou 2 testes. 
 Para executar os testes basta utilizar o comando `npm test`utilizando claro as dependencias de desenvolvimento disponíveis no `package.json`. 
+
+### Equipe
+>Emanuelle Neves 
+>Alberto Rebouças
 ### Aplicação no Heroku
 https://site-algoritmos.herokuapp.com/
