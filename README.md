@@ -28,7 +28,7 @@ O site deve usar o pacote ejs;
 ### Utilizando o JEST para testes
 > **Obs.:** Cada código referente aos algoritmos acima do módulo `calculos.js` possui 1 ou 2 testes. 
 Para executar os testes basta utilizar o comando `npm test`utilizando claro as dependencias de desenvolvimento disponíveis no `package.json`. 
-#### Utilizando o propt de comando ou o terminal VS faça: 
+#### Utilizando o propt de comando ou o terminal VS code, faça: 
 
     $ npm install jest
     $ npx jest --init
