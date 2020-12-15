@@ -11,6 +11,16 @@ const {
     ordenar} = require('./calculos.js');
 const app = express();
 
+firebase.initializeApp({
+    apiKey: "AIzaSyBRutmccJl6f6vhL35RAivYuMZFbTgxg0s",
+    authDomain: "site-algoritmos-fundamentais.firebaseapp.com",
+    projectId: "site-algoritmos-fundamentais",
+    storageBucket: "site-algoritmos-fundamentais.appspot.com",
+    messagingSenderId: "751097128519",
+    appId: "1:751097128519:web:845a76b5689c48b5d13362",
+    measurementId: "G-7E0JFFBL9L"
+});
+
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(expressLayouts); 
@@ -108,19 +118,6 @@ app.post('/contato', (req, res) => {
         email, 
         mensagem,
     }
-
-    const firebaseConfig = {
-        apiKey: "AIzaSyBRutmccJl6f6vhL35RAivYuMZFbTgxg0s",
-        authDomain: "site-algoritmos-fundamentais.firebaseapp.com",
-        projectId: "site-algoritmos-fundamentais",
-        storageBucket: "site-algoritmos-fundamentais.appspot.com",
-        messagingSenderId: "751097128519",
-        appId: "1:751097128519:web:845a76b5689c48b5d13362",
-        measurementId: "G-7E0JFFBL9L"
-    };
-    
-    firebase.initializeApp(firebaseConfig);
-
     const db = firebase.database().ref('contatos');
 
     const novoContato = db.push();
