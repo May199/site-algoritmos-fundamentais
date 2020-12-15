@@ -110,14 +110,9 @@ app.get('/contato', (req, res) => {
     res.render('pages/contato', { resultado: null });
 });
 app.post('/contato', (req, res) => {
-    const {nome, telefone, email, mensagem} = req.body;
-
-    const dados = {
-        nome, 
-        telefone, 
-        email, 
-        mensagem,
-    }
+    const dados = req.body;
+    
+    console.log(dados);
     const db = firebase.database().ref('contatos');
 
     const novoContato = db.push();
